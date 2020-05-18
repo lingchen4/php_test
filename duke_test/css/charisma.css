@@ -1,0 +1,281 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: NouvelleVague;
+    src: url(../assets/fonts/NouvelleVague-Black.woff);
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(../assets/fonts/Gotham-Medium.woff);
+}
+
+@font-face {
+    font-family: "Gotham-light";
+    src: url(../assets/fonts/Gotham-Light.woff)
+}
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url(../assets/fonts/Gotham-Book.woff)
+}
+
+.text-nouv {
+    font-family: NouvelleVague;
+}
+
+.text-goth {
+    font-family: Gotham;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.header-img {
+    height: 3em;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.rotate-text {
+    writing-mode: vertical-lr;
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
+    text-align: center;
+    font-size: 0.5em;
+    letter-spacing: 0.5em;
+}
+
+.text-green {
+    color: #a5cca1;
+}
+
+.title-text {
+    font-size: 4em;
+    white-space: nowrap;
+}
+
+
+.description-text {
+    font-size: 0.9em;
+    color: black;
+}
+
+.main .center {
+    background: url("../assets/leaves-bg.jpg") no-repeat center center / cover;
+    min-height: 25rem;
+
+}
+
+.cha-button {
+    color: white;
+    font-size: 1em;
+    padding: 0.7em 1em;
+    border: none;
+    font-family: Gotham-Book;
+}
+
+.cha-button:hover {
+    cursor: pointer;
+}
+
+.cha-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.main .center button {
+    background-color: #69ac65;
+}
+
+.register-form button {
+    background-color: #00804d;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info h2 {
+    font-size: 4em;
+    color: #00804d;
+}
+
+.text-small {
+    font-size: 0.7em;
+}
+
+.text-xsmall {
+    font-size: 0.4em;
+}
+
+.text-grey {
+    color: #777;
+}
+
+.text-light-grey {
+    color: #ccc;
+}
+
+.text-space {
+    letter-spacing: 0.2em;
+}
+
+.cha-input {
+    width: 100%;
+    margin-bottom: 0.4em;
+    padding: 0.5em 1em;
+}
+
+.radio-container {
+    padding-left: 4em;
+    position: relative;
+    margin-right: 1.5em;
+    line-height: 2.5em;
+}
+
+.radio-container input {
+    display: none;
+}
+
+.radio-container input:checked~.checkmark {
+    background-color: #00804d;
+}
+
+.radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.casl-span {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.footer .center {
+    background: url("../assets/footer.jpg") no-repeat center center / cover;
+}
+
+.social-icon {
+    font-size: 1em;
+    line-height: 2em;
+    color: #fff;
+    display: inline-block;
+    background: #69ac65;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+}
+
+.building-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #69ac65;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    letter-spacing: 0.1rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Gotham-light;
+    font-weight: bold;
+}
+
+.hover-image:hover .overlay {
+    opacity: 0.8;
+}
+
+.hover-image {
+    position: relative;
+    width: 100%;
+}
+
+.building-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.side-img {
+    position: absolute;
+    top: -24em;
+    left: 0;
+    height: 48em;
+    z-index: -1;
+}
+
+.side-img img {
+    height: 100%;
+}
+
+.message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    z-index: 10;
+}
+
+@media (max-width: 767.98px) {
+    .icon {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .side-img {
+        opacity: 0.3;
+    }
+}
+
+.submit-button {
+    width: 10em;
+    font-size: 0.9em;
+    padding: 0.5em;
+}
+
+.submit-button:hover {
+    background-color: #189696;
+    font-weight: bold;
+}
